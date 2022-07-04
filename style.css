@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+  background-color: aliceblue !important;
+  color: black;
+}
+
+nav ul a {
+  color: black;
+  text-decoration: none;
+  transition: none;
+}
+
+.fis-logo {
+  margin-left: -70px;
+  height: 25px;
+  width: auto;
+}
+
+.collapsible-header,
+.collapsible-body,
+.collapsible,
+ul.collapsible>li {
+  box-shadow: none !important;
+  background: #181818;
+  color: white;
+}
+
+.register-btn {
+  background-color: #4bcd3e;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 6px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.inline-icon {
+  vertical-align: bottom;
+  font-size: 22px !important;
+}
