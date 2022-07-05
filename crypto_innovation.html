@@ -38,11 +38,11 @@
 
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="#login" style="font-weight: bold;">Log in</a>
+                            <a href="#login" id="login-txt">Log in</a>
                         </li>
                         <li>
-                            <a href="#register" class="btn-small"
-                            style="background-color: #4bcd3e; border-radius:15px;color:black;font-weight: bold;">Register now</a>
+                            <a href="#register" class="btn-small" id="register-btn">Register
+                                now</a>
                         </li>
                     </ul>
                 </div>
@@ -61,11 +61,10 @@
             <a href="#contactus">ContactUs</a>
         </li>
         <li>
-            <a href="#login" style="font-weight: bold;">Log in</a>
+            <a href="#login" id="login-txt">Log in</a>
         </li>
         <li>
-            <a href="#register" class="btn-small"
-            style="background-color: #4bcd3e; border-radius:15px;color:black;font-weight: bold;">Register now</a>
+            <a href="#register" id="register-btn" class="btn-small">Register now</a>
         </li>
     </ul>
 
@@ -92,25 +91,26 @@
         </div>
     </section>
 
-    <section id="criteria" class="section">
+    <section id="criteria" class="section ">
         <div class="container">
             <h1 class="center-align white-text">WHAT’S THE JUDGING CRITERIA?</h1>
-            <p class="center-align"><img src="img/Rectangle 78.svg" alt=""></p>
+            <p class="center-align"><img src="img/Rectangle 78.svg" alt="" style="margin-bottom: 40px;"></p>
 
             <div class="row">
                 <div class="col s12 m4">
                     <ul class="collapsible">
                         <li>
-                            <div class="collapsible-header white-text">
-                                Problem : XX Points
+                            <div id="collapsible-card" class="collapsible-header white-text">
+                                Problem : 30 Points
                             </div>
                         </li>
                     </ul>
                 </div>
+
                 <div class="col s12 m8">
                     <ul class="collapsible sec-1">
                         <li>
-                            <div class="collapsible-header white-text">
+                            <div id="collapsible-card3" class="collapsible-header white-text">
                                 Did the solution use innovative, nascent or emerging technologies?
                             </div>
                         </li>
@@ -119,11 +119,11 @@
             </div>
 
             <div class="row">
-                <div class="col s12 m4">
+                <div class="col s12 m4" >
                     <ul class="collapsible">
                         <li>
-                            <div class="collapsible-header">
-                                Solution : YY Points
+                            <div id="collapsible-card" class="collapsible-header">
+                                Solution : 30 Points
                             </div>
                         </li>
                     </ul>
@@ -131,7 +131,7 @@
                 <div class="col s12 m8">
                     <ul class="collapsible sec-1">
                         <li>
-                            <div class="collapsible-header white-text">
+                            <div id="collapsible-card1" class="collapsible-header white-text">
                                 Did this solutions result in an improved user
                                     experience
                                     and/or a cost/revenue benefit for financial institutions?
@@ -146,8 +146,8 @@
                 <div class="col s12 m4">
                     <ul class="collapsible">
                         <li>
-                            <div class="collapsible-header white-text">
-                                Co-creation : ZZ Points
+                            <div id="collapsible-card" class="collapsible-header white-text">
+                                Co-creation : 40 Points
                             </div>
                         </li>
                     </ul>
@@ -155,7 +155,7 @@
                 <div class="col s12 m8">
                     <ul class="collapsible sec-1">
                         <li>
-                            <div class="collapsible-header white-text">
+                            <div id="collapsible-card1" class="collapsible-header white-text">
                                 Did this solutions result in an improved user
                                     experience
                                     and/or a cost/revenue benefit for financial institutions?
@@ -168,50 +168,50 @@
     </section>
 
     <section id="contactus" class="section white-text" style="background-color: #181818;">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="center-align">
-                        <h5 style="text-transform: uppercase;color: white; font-weight: bolder;">Have any questions</h5>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="question">
+                    <h5 id="question-txt">Have any questions</h5>
 
-                        <p style="margin-top: 40px;">Send all your question to <br> IN48Partner@fisglobal.com</p>
-                        <a href="#register" class="btn-small" style="background-color: #4bcd3e; border-radius:15px;color:black;font-weight: bolder;">Register now</a>
-                    </div>
+                    <p>Send all your question to <br> IN48Partner@fisglobal.com</p>
+                    <a href="#register" class="btn-small" id="register-btn">Register now</a>
                 </div>
+            </div>
 
-                <div class="col s12 m4">
-                    <div class="center-align">
-                        <p class="white-text" id="connected">Stay connected</p>
+            <div class="col s12 m4" id="connected">
+                <div class="social-media">
+                    <p class="white-text">Stay connected</p>
+                    <div id="social-links">
                         <a href="https://www.facebook.com/FIStoday/" target="_blank">
-                            <i class="fa fa-facebook-square" style="font-size: 1.5em;"></i>
+                            <i class="fa fa-facebook-square" style="font-size: 1.8em;padding: 6px"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/fis/" target="_blank">
-                            <i class="fa fa-twitter-square" style="font-size: 1.5em;padding: 10px;" ></i>
+                            <i class="fa fa-twitter-square" style="font-size: 1.8em;padding: 8px;"></i>
                         </a>
                         <a href="https://twitter.com/fisglobal" target="_blank">
-                            <i class="fa fa-linkedin-square" style="font-size: 1.5em;"></i>
+                            <i class="fa fa-linkedin-square" style="font-size: 1.8em;padding: 5px;"></i>
                         </a>
                     </div>
                 </div>
+            </div>
 
-                <div class="col s12 m4">
-                    <div class="center-align">
-                        <a href="#">
-                            <p style="color: white;">Customer Support <i class="inline-icon material-icons"
-                                    style="color:#4bcd3e;display: inline-block">chevron_right</i></p>
-                        </a>
-                        <a href="https://www.fisglobal.com/en/terms-of-use" target="_blank">
-                            <p style="color: white;">Terms of use <i class="inline-icon material-icons"
-                                    style="color:#4bcd3e">chevron_right</i></p>
-                        </a>
+            <div class="col s12 m4">
+                <div class="customer-link" style="margin-top: 50px;">
+                    <a href="#">
+                        <p style="color: white;">Customer Support <i class="inline-icon material-icons"
+                                style="color:#4bcd3e;">chevron_right</i></p>
+                    </a>
+                    <a href="https://www.fisglobal.com/en/terms-of-use" target="_blank">
+                        <p style="color: white;">Terms of use <i class="inline-icon material-icons"
+                                style="color:#4bcd3e">chevron_right</i></p>
+                    </a>
 
-                        <a href="https://www.fisglobal.com/en/privacy" target="_blank">
-                            <p href="" style="color: white;">Privacy policy
-                                <i class="inline-icon material-icons" style="color:#4bcd3e">chevron_right</i>
-                            </p>
-                        </a>
+                    <a href="https://www.fisglobal.com/en/privacy" target="_blank">
+                        <p href="" style="color: white;">Privacy policy
+                            <i class="inline-icon material-icons" style="color:#4bcd3e">chevron_right</i>
+                        </p>
+                    </a>
 
-                    </div>
                 </div>
             </div>
         </div>

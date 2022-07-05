@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Prowght@300;400;600;900');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;900&display=swap');
 
 html,
 body {
   overflow-x: hidden !important;
   background: black;
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 nav {
@@ -49,13 +50,36 @@ ul.collapsible>li {
 
 h1 {
   text-transform: uppercase;
-  font-size: 32px;
-  font-weight: bolder;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 900;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .inline-icon {
   vertical-align: bottom;
   font-size: 22px !important;
+}
+
+#login-txt {
+  text-transform: none;
+  color: black;
+  font-weight: 600;
+}
+
+#register-btn {
+  text-transform: none;
+  background: #4bcd3e;
+  border-radius: 15px;
+  color: black;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
@@ -95,6 +119,10 @@ h1 {
     font-weight: bolder;
   }
 
+  h5 {
+    font-size: 22px !important;
+  }
+
   .section-text {
     font-size: 24px;
   }
@@ -109,10 +137,11 @@ h1 {
   }
 
   .card-panel a {
-    width:120%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    color: white !important;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card-panel .section-text {
@@ -171,6 +200,26 @@ h1 {
   #contactus #connected {
     font-size: 16px;
     font-weight: bolder;
+  }
+
+  #contactus .question {
+    margin: 50px 60px;
+  }
+
+  .question p {
+    margin-top: 60px;
+  }
+
+  .social-media {
+    margin: 50px 60px;
+  }
+
+  #social-links {
+    margin-top: -20px
+  }
+
+  #customer-link {
+    margin-top: 50px;
   }
 }
 
@@ -226,12 +275,13 @@ h1 {
   }
 
   .card-panel a {
-    width:70%;
+    width: 70%;
     margin-right: 15%;
-    margin-left: 15%;;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    margin-left: 15%;
+    color: white!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card-panel .section-text {
@@ -252,6 +302,20 @@ h1 {
 
   .collapsible-header {
     border-bottom: 1px solid black;
+  }
+
+  #collapsible-card {
+    padding: 25px 55px;
+  }
+
+  #collapsible-card1 {
+    font-size: 11px;
+    padding: 20px 60px;
+  }
+
+  #collapsible-card3 {
+    font-size: 11px;
+    padding: 28px 55px;
   }
 
   .collapsible-header i {
@@ -287,14 +351,34 @@ h1 {
     display: none;
   }
 
+  #contactus {
+    margin-top: 50px;
+  }
+
   #contactus #connected {
     font-size: 16px;
     font-weight: bolder;
   }
-}
 
-@media only screen and (min-width: 2000px) {
-  /* for sumo sized (mac) screens */
+  #contactus .question {
+    margin: 50px 60px;
+  }
+
+  .question p {
+    margin-top: 60px;
+  }
+
+  .social-media {
+    margin: 50px 90px;
+  }
+
+  #social-links {
+    margin-top: -20px
+  }
+
+  #customer-link {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 960px) {
@@ -353,14 +437,18 @@ h1 {
   }
 
   .card-panel a {
-    width:120%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    color: white !important;
+    font-size: 11px;
+    ;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card-panel .section-text {
-    font-size: 11px;;
+    font-size: 11px;
+    ;
   }
 
   #timeline {
@@ -413,8 +501,36 @@ h1 {
   }
 
   #contactus #connected {
-    font-size: 16px;
-    font-weight: bolder;
+    text-align: center;
+  }
+
+  #question-txt {
+    font-size: 18px;
+    width: 200px;
+  }
+  
+  #register-btn {
+    font-size: smaller !important;
+  }
+
+  #contactus .question {
+    margin: 50px 60px;
+  }
+
+  .question p {
+    margin-top: 60px;
+  }
+
+  .social-media {
+    margin: 50px 60px;
+  }
+
+  #social-links {
+    margin-top: -20px
+  }
+
+  #customer-link {
+    margin-top: 50px;
   }
 
 }
@@ -475,12 +591,13 @@ h1 {
   }
 
   .card-panel a {
-    width:50%;
-    margin-left:25%;
-    margin-right:25%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
   }
 
   #timeline {
@@ -541,6 +658,24 @@ h1 {
     font-weight: bolder;
   }
 
+  
+  #contactus #connected {
+    text-align: center;
+  }
+
+  .question {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .customer-link {
+    text-align: center;
+  }
+
+  .social-media {
+    margin-top: 45px;
+  }
+
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -599,12 +734,13 @@ h1 {
   }
 
   .card-panel a {
-    width:50%;
-    margin-left:25%;
-    margin-right:25%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
   }
 
   #timeline {
@@ -663,5 +799,24 @@ h1 {
   #contactus #connected {
     font-size: 16px;
     font-weight: bolder;
+  }
+
+  h5 {
+    font-size: 22px !important;
+    text-align: center;
+  }
+
+  .question {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .customer-link {
+    text-align: center;
+  }
+
+  .social-media {
+    text-align: center;
+    margin-top: 45px;
   }
 }
