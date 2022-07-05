@@ -70,13 +70,259 @@ h1 {
   /* for sumo sized (mac) screens */
 }
 
-@media only screen and (device-width: 768px) {
-  /* default iPad screens */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  /* styles for ipad */
+
+  .fis-logo {
+    margin: 0;
+    text-align: center;
+  }
+
+  .responsive-img {
+    width: 90%;
+    margin: 50px 50px;
+  }
+
+  .responsive-img1 {
+    width: 160%;
+    margin: 95px -195px;
+  }
+
+  #landing-img .responsive-img {
+    width: 100%;
+    margin: auto;
+  }
+
+  #landing-img .responsive-img1 {
+    width: 100%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .responsive-img3 {
+    width: 90%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+
+  .section-text {
+    font-size: 26px;
+  }
+
+  .card-panel {
+    margin-top: -40px;
+  }
+
+  .card-panel img {
+    width: 100%;
+    margin: 35px 0 0 20px;
+  }
+
+  .card-panel a {
+    width:120%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .card-panel .section-text {
+    font-size: 11px;;
+  }
+
+  #timeline {
+    margin-top: -60px;
+  }
+
+  #faqs ul li {
+    background: #181818;
+  }
+
+  .collapsible {
+    border: 1px solid black;
+  }
+
+  .collapsible-header {
+    border-bottom: 1px solid black;
+  }
+
+  .collapsible-header i {
+    margin: 15px 25px 0 0;
+  }
+
+  .collapsible-header span {
+    color: #4bcd3e;
+  }
+
+  .collapsible li.active i {
+    -ms-transform: rotate(180deg);
+    /* IE 9
+*/
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  }
+
+  .rotate {
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+
+  .collapsible-header i {
+    position: absolute;
+    right: 70px;
+    color: #4bcd3e;
+  }
+
+  #collapse {
+    display: none;
+  }
+
+  #contactus #connected {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
 }
 
 
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  /* styles for ipad */
+
+  .fis-logo {
+    margin: 0;
+    text-align: center;
+  }
+
+  .responsive-img {
+    width: 60%;
+    margin-top: 40px;
+  }
+
+  .responsive-img1 {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  #landing-img .responsive-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #landing-img .responsive-img1 {
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .responsive-img3 {
+    width: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-panel {
+    margin-top: -40px;
+  }
+
+  .card-panel img {
+    width: 45%;
+    margin: 35px 0 0 110px;
+  }
+
+  .card-panel a {
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  #timeline {
+    margin-top: -60px;
+  }
+
+  #faqs ul li {
+    background: #181818;
+  }
+
+  .collapsible {
+    border: 1px solid black;
+  }
+
+  .collapsible-header {
+    border-bottom: 1px solid black;
+  }
+
+  .collapsible-header i {
+    margin: 15px 25px 0 0;
+  }
+
+  .collapsible-header span {
+    color: #4bcd3e;
+  }
+
+  .collapsible li.active i {
+    -ms-transform: rotate(180deg);
+    /* IE 9
+*/
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  }
+
+  .rotate {
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+
+  .collapsible-header i {
+    position: absolute;
+    right: 6px;
+    color: #4bcd3e;
+  }
+
+  #collapse {
+    display: none;
+  }
+
+  .sec-1 {
+    margin-top: -10px;
+  }
+
+  #contactus #connected {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+}
+
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .fis-logo {
+    margin: 0;
+    text-align: center;
+  }
 
   .responsive-img {
     width: 60%;
@@ -126,11 +372,12 @@ h1 {
   }
 
   .card-panel a {
-    justify-content: center;
-    display: flex;
-    top: 50%;
-    bottom: 50%;
-    /* margin: 10px 0 0 65px; */
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   #timeline {
@@ -190,7 +437,4 @@ h1 {
     font-size: 16px;
     font-weight: bolder;
   }
-
-  /* "padding:13px 0px 16px 10px;background: #181818;display:flex;justify-content:center;border: 5px solid black " */
-
 }
