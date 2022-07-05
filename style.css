@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
-  margin: 0px;
-  padding: 0px;
   background: black;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -24,13 +22,44 @@ nav ul a {
   width: auto;
 }
 
-.collapsible-header,
-.collapsible-body,
-.collapsible,
-ul.collapsible>li {
-  box-shadow: none !important;
+.collapsible-header {
+  justify-content: center;
+  margin-bottom: 5px;
   background: #181818;
   color: white;
+}
+
+li .material-icons {
+  color: #4bcd3e;
+}
+
+.collapsible-header p span {
+  color: #4bcd3e;
+  margin-right: 5px;
+}
+
+.collapsible li.active i {
+  -ms-transform: rotate(180deg);
+  /* IE 9
+*/
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+.rotate {
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.collapsible-header i {
+  position: absolute;
+  right: 0px;
+}
+
+#collapse {
+  display: none;
 }
 
 .register-btn {
@@ -49,11 +78,302 @@ ul.collapsible>li {
 
 h1 {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bolder;
 }
 
 .inline-icon {
   vertical-align: bottom;
   font-size: 22px !important;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  /* styles for browsers larger than 1440px; */
+  .responsive-img {
+    max-width: 250%;
+    margin-top: 120px;
+  }
+
+  .responsive-img1 {
+    max-width: 250%;
+    margin-top: 70px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p .section-text {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  html {
+    margin:0;
+    padding: 0;
+  }
+
+  /* for sumo sized (mac) screens */
+ .responsive-img {
+    max-width: 125%;
+    margin-top: 75px;
+  }
+
+  .responsive-img1 {
+    max-width: 150%;
+    margin: 25px 0 0 -200px;
+  }
+
+  .responsive-img3 {
+    width: 100%;
+  }
+
+  .responsive-img4 {
+    margin-left: 60px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: bolder;
+    margin-left: 31px;
+  }
+
+  .section-text {
+    font-size: 20px;
+    margin-left: -25px;
+  }
+
+  #criteria .section-text {
+    width: 150%;
+    font-size: 20px;
+    margin-left: -15px;
+  }
+
+  .card-panel a {
+    font-size: 16px;
+    margin-left: 75px;
+  }
+
+  .collapsible {
+    border: 5px solid black;
+  }
+
+  .collapsible-header {
+    justify-content:left;
+    border-bottom: 1px solid black;
+  }
+
+  .collapsible-header i {
+    margin: 15px 255px 0 0;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .responsive-img {
+    max-width: 125%;
+    margin-top: 75px;
+  }
+
+  .responsive-img1 {
+    max-width: 150%;
+    margin: 25px 0 0 -200px;
+  }
+
+  .responsive-img3 {
+    width: 100%;
+  }
+
+  .responsive-img4 {
+    margin-left: 60px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: bolder;
+    margin-left: 31px;
+  }
+
+  .section-text {
+    font-size: 20px;
+    margin-left: -25px;
+  }
+
+  #criteria .section-text {
+    width: 150%;
+    font-size: 20px;
+    margin-left: -15px;
+  }
+
+  .card-panel a {
+    font-size: 16px;
+    margin-left: 75px;
+  }
+
+  .collapsible {
+    border: 5px solid black;
+  }
+
+  .collapsible-header {
+    justify-content:left;
+    border-bottom: 1px solid black;
+  }
+
+  .collapsible-header i {
+    margin: 15px 255px 0 0;
+  }
+}
+
+
+
+
+@media only screen and (device-width: 768px) {
+
+  /* default iPad screens */
+  .responsive-img {
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  .responsive-img1 {
+    max-width: 175%;
+    margin: 0px 0px 0px -170px;
+  }
+
+  .responsive-img3 {
+    width: 140%;
+    margin: -5px 0 0 -140px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .section-text {
+    font-size: 12px;
+    margin-left: -25px;
+  }
+
+  #criteria .section-text {
+    width: 180%;
+    font-size: 16px;
+    margin-left: -25px;
+  }
+
+  .card-panel {
+    margin-top: -40px;
+  }
+
+  .card-panel img {
+    height: 80%;
+    width: 80%;
+    margin: 35px 0 0 20px;
+  }
+
+  .card-panel a {
+    margin: 10px 0 0 13px;
+  }
+
+  #timeline {
+    margin: -55px;
+  }
+
+  .collapsible {
+    border: 5px solid black;
+  }
+
+  .collapsible-header {
+    border-bottom: 1px solid black;
+  }
+
+  .collapsible-header i {
+    margin: 15px 35px 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .responsive-img {
+    width: 60%;
+    margin-top: 40px;
+  }
+
+  .responsive-img1 {
+    width: 80%;
+    margin-top: -30px;
+  }
+
+  .responsive-img3 {
+    width: 150%;
+    margin: -5px 0 0 -81px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .section-text {
+    font-size: 18px;
+  }
+
+  .card-panel {
+    margin-top: -40px;
+  }
+
+  .card-panel img {
+    height: 80%;
+    width: 80%;
+    margin: 35px 0 0 20px;
+  }
+
+  .card-panel a {
+    margin: 10px 0 0 83px;
+  }
+
+  #timeline {
+    margin-top: -55px;
+  }
+
+  #faqs ul li {
+    background: #181818;
+  }
+
+  .collapsible {
+    border: 1px solid black;
+  }
+
+  .collapsible-header {
+    height: 80%;
+    width: 80%;
+    border-bottom: 1px solid black;
+  }
+
+  .collapsible-header i {
+    margin: 15px 35px 0 0;
+  }
 }
